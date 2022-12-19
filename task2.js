@@ -1,7 +1,7 @@
-const palindrome = "arara"
-const reverso = palindrome.split("").reverse().join("")
+const argument = "arara"
+const reverso = argument.split("").reverse().join("")
 
-if(palindrome === reverso){
+if(argument === reverso){
   console.log(true)
 } else{
   console.log(false)
