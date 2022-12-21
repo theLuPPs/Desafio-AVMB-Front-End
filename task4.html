@@ -1,0 +1,18 @@
+<html>
+    <html></head>
+    <body>
+        <div id='herois'></div>
+    </body>
+    <script>
+        const timeStamp = '1671659529';
+        const apiKey = '150c0333bb7dda27d705c07a603d8ab1';
+        const md5 = 'e38f0445cd3c94622e233955e7cc5c76';
+
+        fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=6`
+        ).then((response) => {
+            return response.json();
+        }).then((jsonParsed) => {
+            console.log(jsonParsed);
+        })
+    </script>
+</html>
